@@ -12,14 +12,12 @@ const App = () => {
             console.log(data);
         }
     }
-
-
     return (
-        <div class='main-container'>
+        <div className='main-container'>
             <input
                 type='text'
                 className='search'
-                placeholder='...'
+                placeholder='Search...'
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={search}
